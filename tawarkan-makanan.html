@@ -30,10 +30,7 @@ Tawarkan makanan
 <main id="konten-utama" tabindex="-1">
 <h1>Catat penawaran makanan berlebih</h1>
 <p>
-Gunakan data fiktif selama praktikum. Jangan menawarkan makanan yang
->
-
-rusak, kedaluwarsa, tercemar, atau tidak aman dikonsumsi.
+Gunakan data fiktif selama praktikum. Jangan menawarkan makanan yangrusak, kedaluwarsa, tercemar, atau tidak aman dikonsumsi.
 </p>
 <p id="petunjuk-wajib">Kolom bertanda <strong> *< /strong> wajib diisi .< /p>
 
@@ -41,6 +38,7 @@ rusak, kedaluwarsa, tercemar, atau tidak aman dikonsumsi.
 action="tawarkan-makanan.html"
 method="get"
 aria-describedby="petunjuk-wajib"
+>
 
 <fieldset>
 <legend>Identitas makanan</legend>
@@ -65,8 +63,7 @@ required
 <option value="roti-kue">Roti atau kue</option>
 <option value="buah-sayur">Buah atau sayur</option>
 <option value="minuman">Minuman</option>
-<option value="bahan-pangan">Bahan pangan</option>
-<option value="lainnya">Lainnya</option>
+<option value="bahan-pangan">Bahan pangan</option><option value="lainnya">Lainnya</option>
 </select>
 </p>
 
@@ -98,8 +95,7 @@ id="jumlah"
 name="jumlah"
 min="1"
 max="1000"
-step="1"
-required
+step="1"required
 >
 </p>
 
@@ -125,19 +121,18 @@ min="0"
 max="10000000"
 step="500"
 required
->
+
 </p>
 
 <fieldset>
 <legend>Jenis penawaran *< /legend>
 <p>
-<input
-type="radio"
+<inputtype="radio"
 id="jenis-diskon"
 name="jenis_penawaran"
 value="diskon"
 required
->
+
 <label for="jenis-diskon">Dijual dengan harga diskon</label>
 </p>
 <p>
@@ -165,7 +160,8 @@ required
 ><br>
 <small id="bantuan-harga">
 Isi 0 jika makanan disalurkan tanpa biaya. Perbandingan dengan
-harga normal akan divalidasi menggunakan JavaScript pada chapter berikutnya.
+
+>harga normal akan divalidasi menggunakan JavaScript pada chapter berikutnya.
 </small>
 </p>
 </fieldset>
@@ -197,8 +193,7 @@ required
 
 <fieldset>
 <legend>Informasi alergen yang diketahui</legend>
-<p>
-    <input type="checkbox" id="alergen-gluten" name="alergen" value="gluten">
+<D><input type="checkbox" id="alergen-gluten" name="alergen" value="gluten">
 <label for="alergen-gluten">Gluten</label>
 </p>
 <p>
@@ -230,15 +225,14 @@ required
 </fieldset>
 
 <fieldset>
-<legend>Konfirmasi keamanan pangan</legend>
-<p>
+<legend>Konfirmasi keamanan pangan</legend><p>
 <input
 type="checkbox"
 id="konfirmasi-keamanan"
 name="konfirmasi_keamanan"
 value="terkonfirmasi"
 required
-
+>
 <label for="konfirmasi-keamanan">
 Saya memastikan contoh makanan ini masih layak konsumsi dan
 informasi kondisi serta alergennya telah ditulis dengan jujur. *
@@ -262,4 +256,8 @@ Aturan lintas-kolom tersebut akan ditambahkan dengan JavaScript dan
 tetap diperiksa ulang pada server.
 </p>
 </section>
-</main>
+</main><footer>
+<p>&copy; 2026 SisaBaik - Proyek pembelajaran Pengembangan Web .< /p>
+</footer>
+</body>
+</html>
